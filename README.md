@@ -2,8 +2,6 @@
 
 This repository hosts my personal portfolio website, designed to showcase my skills and projects in Information Technology, Software Engineering, Graphics Design, Photography, Digital Marketing and IT Support.
 
-The website is built using the Massively template by [HTML5 UP](https://html5up.net/massively), which provides a strong, responsive foundation.
-
 ## Key Features & Customizations
 
 This portfolio has been customized to:
@@ -43,6 +41,6 @@ To view locally:
 
 ## License
 
-This project is based on the **Massively** template by [HTML5 UP](https://html5up.net/), released under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
+Released under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
 ---
