@@ -1,249 +1,531 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
     <head>
-        <title>Brandon's Portfolio 2026</title>
+        <!-- Meta Information -->
+        <title>Brandon Chidhuza | Software Engineer & Media Specialist</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="Full-stack software engineer and media specialist based in Harare, Zimbabwe. Specializing in scalable systems, visual storytelling, and IT infrastructure." />
+        <meta name="keywords" content="software engineer, web developer, photographer, IT support, Harare, Zimbabwe" />
+        <meta name="author" content="Brandon Chidhuza" />
         
+        <!-- Open Graph Meta Tags for Social Sharing -->
+        <meta property="og:title" content="Brandon Chidhuza | Software Engineer & Media Specialist" />
+        <meta property="og:description" content="Full-stack software solutions and professional media production in Zimbabwe." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://imbzim.github.io/IMBZIMgithub.io/" />
+        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
+        <!-- Tailwind CSS CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
+            // Tailwind Configuration
+            // Disable preflight to prevent conflicts with existing template styles
             tailwind.config = {
-                // This is CRITICAL: It stops Tailwind from breaking your existing template fonts/buttons
                 corePlugins: {
-                    preflight: false,
+                    preflight: false, 
                 }
             }
         </script>
         
         <style>
-            /* Ensure Tailwind grids fit inside the template container */
-            .tw-container { width: 100%; }
+            /* Custom Styles */
+            
+            /* Ensure Tailwind containers span full width within template */
+            .tw-container { 
+                width: 100%; 
+            }
+            
+            /* Smooth scrolling for anchor links */
+            html { 
+                scroll-behavior: smooth; 
+            }
+            
+            /* Mobile Optimizations */
+            @media (max-width: 768px) {
+                /* Reduce hero text size on mobile */
+                .hero-title {
+                    font-size: 2rem !important;
+                }
+                
+                /* Adjust padding for mobile screens */
+                .mobile-padding {
+                    padding: 1.5rem !important;
+                }
+                
+                /* Ensure tech badges wrap properly */
+                .tech-badges {
+                    gap: 0.5rem;
+                }
+                
+                /* Make project cards stack nicely */
+                .project-card {
+                    margin-bottom: 1.5rem;
+                }
+                
+                /* Optimize iframe preview for mobile */
+                .iframe-preview {
+                    height: 200px !important;
+                }
+            }
+            
+            /* Ensure images are responsive and don't overflow */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            /* Improve touch targets for mobile (minimum 44x44px) */
+            .button, 
+            button, 
+            a.button {
+                min-height: 44px;
+                min-width: 44px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            /* Prevent text from being too small on mobile */
+            @media (max-width: 480px) {
+                body {
+                    font-size: 16px;
+                }
+            }
         </style>
     </head>
     <body class="is-preload">
 
+        <!-- Main Wrapper -->
         <div id="wrapper" class="fade-in">
 
-              
+            <!-- Header Section -->
+            <header id="header">
+                <a href="index.html" class="logo" aria-label="IMBZ Home">IMBZ</a>
+            </header>
 
-                <header id="header">
-                        <a href="index.html" class="logo">IMBZ 2026</a>
-                    </header>
+            <!-- Navigation Menu -->
+            <nav id="nav" role="navigation" aria-label="Main navigation">
+                <ul class="links">
+                    <li class="active"><a href="index.html">Portfolio</a></li>
+                    <li><a href="generic.html">About Me</a></li>
+                </ul>
+                
+                <!-- Social Media Links -->
+                <ul class="icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/brandon-chidhuza-3b7780192" 
+                           class="icon brands fa-linkedin" 
+                           aria-label="LinkedIn Profile"
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IMBZIM" 
+                           class="icon brands fa-github" 
+                           aria-label="GitHub Profile"
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <span class="label">GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/IMB_ZW" 
+                           class="icon brands fa-twitter" 
+                           aria-label="Twitter Profile"
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <span class="label">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/photographyg3ek" 
+                           class="icon brands fa-instagram" 
+                           aria-label="Instagram Profile"
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <span class="label">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-                <nav id="nav">
-                        <ul class="links">
-                            <li class="active"><a href="index.html">Portfolio</a></li>
-                            <li><a href="generic.html">About Me</a></li>
-                        </ul>
-                        <ul class="icons">
-                            <li><a href="https://twitter.com/IMB_ZW" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="https://www.instagram.com/photographyg3ek" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                            <li><a href="https://github.com/IMBZIM" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/brandon-chidhuza-3b7780192" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                        </ul>
-                    </nav>
+            <!-- Main Content Area -->
+            <div id="main">
 
-                <div id="main">
+                <!-- Hero Section -->
+                <article class="post featured tw-container !p-0 !bg-transparent !border-0">
+                    <div class="bg-gray-900 text-white rounded-xl overflow-hidden shadow-2xl relative">
+                        
+                        <!-- Background Image with Overlay -->
+                        <div class="absolute inset-0 opacity-40">
+                            <img src="images2/portimage.jpg" 
+                                 class="w-full h-full object-cover" 
+                                 alt="Professional workspace background"
+                                 loading="eager" />
+                        </div>
+                        
+                        <!-- Hero Content -->
+                        <div class="relative z-10 p-10 mobile-padding text-center">
+                            <span class="block text-blue-400 font-bold tracking-widest uppercase mb-2 text-xs md:text-sm">
+                                Current Focus
+                            </span>
+                            <h1 class="hero-title text-4xl font-extrabold text-white mb-4">
+                                Scalable Systems &<br />Visual Storytelling
+                            </h1>
+                            <p class="text-gray-300 max-w-2xl mx-auto mb-8 text-sm md:text-base">
+                                Based in Harare, Zimbabwe, I deliver full-stack software solutions and professional media production.
+                                <br>
+                                Combining technical precision with creative flair.
+                            </p>
+                            <ul class="actions special justify-center">
+                                <li>
+                                    <a href="#projects" 
+                                       class="button primary large scrolly"
+                                       aria-label="View my work">
+                                        View Work
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
 
-                        <article class="post featured tw-container !p-0 !bg-transparent !border-0">
-                            <div class="bg-gray-900 text-white rounded-xl overflow-hidden shadow-2xl relative">
-                                <div class="absolute inset-0 opacity-40">
-                                    <img src="images2/portimage.jpg" class="w-full h-full object-cover" alt="Background">
-                                </div>
-                                <div class="relative z-10 p-10 text-center">
-                                    <span class="block text-blue-400 font-bold tracking-widest uppercase mb-2">Current Focus</span>
-                                    <h2 class="text-4xl font-extrabold text-white mb-4">Scalable Systems &<br />Visual Storytelling</h2>
-                                    <p class="text-gray-300 max-w-2xl mx-auto mb-8">
-                                        Based in Harare, I deliver full-stack software solutions and professional media production. 
-                                        Combining technical precision with creative flair.
-                                    </p>
-                                    <ul class="actions special justify-center">
-                                        <li><a href="#projects" class="button primary large scrolly">View Work</a></li>
-                                    </ul>
-                                </div>
+                <!-- Technologies Section -->
+                <div class="tw-container py-8 text-center border-b border-gray-200 mb-10">
+                    <p class="font-bold text-gray-500 uppercase tracking-widest text-xs mb-4">
+                        Technologies & Tools
+                    </p>
+                    
+                    <!-- Technology Badges -->
+                    <div class="tech-badges flex flex-wrap justify-center gap-4 text-2xl text-gray-700">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded text-sm font-bold">
+                            Python
+                        </span>
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-100 rounded text-sm font-bold">
+                            PHP
+                        </span>
+                        <span class="px-3 py-1 bg-gray-100 rounded text-sm font-bold">
+                            SQL
+                        </span>
+                        <span class="px-3 py-1 bg-cyan-50 text-cyan-700 border border-cyan-100 rounded text-sm font-bold">
+                            Tailwind CSS
+                        </span>
+                        <span class="px-3 py-1 bg-gray-100 rounded text-sm font-bold">
+                            Adobe Suite
+                        </span>
+                        <span class="px-3 py-1 bg-gray-100 rounded text-sm font-bold">
+                            Networking
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Projects Section -->
+                <section id="projects" class="tw-container" aria-labelledby="projects-heading">
+                    <h2 id="projects-heading" class="sr-only">My Projects</h2>
+                    
+                    <!-- Project Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        
+                        <!-- Project 1: Warehouse Hero -->
+                        <article class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <a href="https://github.com/IMBZIM" 
+                               class="block overflow-hidden h-64"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View Warehouse Hero project">
+                                <img src="images2/web dev.jpg" 
+                                     alt="Warehouse management dashboard interface" 
+                                     class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                                     loading="lazy" />
+                            </a>
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-blue-500 uppercase">
+                                    Software Engineering
+                                </span>
+                                <h3 class="text-2xl font-bold mt-2 mb-2 text-gray-900">
+                                    Warehouse Hero
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    A robust warehouse management system designed for security and safety, 
+                                    handling high-volume user data without compromise.
+                                </p>
+                                <ul class="actions">
+                                    <li>
+                                        <a href="https://github.com/IMBZIM" 
+                                           class="button small"
+                                           target="_blank"
+                                           rel="noopener noreferrer"
+                                           aria-label="View GitHub repository">
+                                            GitHub Repo
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </article>
 
-                        <div class="tw-container py-8 text-center border-b border-gray-200 mb-10">
-                            <p class="font-bold text-gray-500 uppercase tracking-widest text-xs mb-4">Technologies & Tools</p>
-                            <div class="flex flex-wrap justify-center gap-4 text-2xl text-gray-700">
-                                <span class="px-3 py-1 bg-gray-100 rounded text-sm font-bold">Python</span>
-                                <span class="px-3 py-1 bg-gray-100 rounded text-sm font-bold">React</span>
-                                <span class="px-3 py-1 bg-gray-100 rounded text-sm font-bold">SQL</span>
-                                <span class="px-3 py-1 bg-gray-100 rounded text-sm font-bold">Adobe Suite</span>
-                                <span class="px-3 py-1 bg-gray-100 rounded text-sm font-bold">Networking</span>
-                            </div>
-                        </div>
-
-                        <section id="projects" class="tw-container">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                
-                                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                                    <a href="#" class="block overflow-hidden h-64">
-                                        <img src="images2/web dev.jpg" alt="" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
-                                    </a>
-                                    <div class="p-6">
-                                        <span class="text-xs font-bold text-blue-500 uppercase">Development</span>
-                                        <h3 class="text-2xl font-bold mt-2 mb-2 text-gray-900">Software Engineering</h3>
-                                        <p class="text-gray-600 text-sm mb-4">Building functional and responsive web applications using modern frameworks.</p>
-                                        <ul class="actions">
-                                            <li><a href="#" class="button small">Github Repo</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                                    <a href="#" class="block overflow-hidden h-64">
-                                        <img src="images2/Photographygeek2.JPEG" alt="" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
-                                    </a>
-                                    <div class="p-6">
-                                        <span class="text-xs font-bold text-purple-500 uppercase">photographygeek</span>
-                                        <h3 class="text-2xl font-bold mt-2 mb-2 text-gray-900">Photography & Video</h3>
-                                        <p class="text-gray-600 text-sm mb-4">Capturing high-quality visual content. Events, portraits, and commercial videography.</p>
-                                        <ul class="actions">
-                                            <li><a href="https://www.instagram.com/photographyg3ek" class="button small">View Gallery</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                                    <a href="#" class="block overflow-hidden h-64">
-                                        <img src="images2/Real estate.jpg" alt="" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
-                                    </a>
-                                    <div class="p-6">
-                                        <span class="text-xs font-bold text-green-500 uppercase">Real Estate</span>
-                                        <h3 class="text-2xl font-bold mt-2 mb-2 text-gray-900">Real Estate Services</h3>
-                                        <p class="text-gray-600 text-sm mb-4">Facilitating smooth property transactions and client acquisition in the Harare market.</p>
-                                        <ul class="actions">
-                                            <li><a href="#" class="button small">Details</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                                    <a href="#" class="block overflow-hidden h-64">
-                                        <img src="images2/DVITSUPPORT.JPEG" alt="" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
-                                    </a>
-                                    <div class="p-6">
-                                        <span class="text-xs font-bold text-orange-500 uppercase">Infrastructure</span>
-                                        <h3 class="text-2xl font-bold mt-2 mb-2 text-gray-900">IT Support Systems</h3>
-                                        <p class="text-gray-600 text-sm mb-4">Systems Administration for Reignball PVT LTD. Backups, storage, and network maintenance.</p>
-                                        <ul class="actions">
-                                            <li><a href="#" class="button small">More Info</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group">
-    
-    <div class="relative h-80 w-full bg-indigo-900 overflow-hidden">
-        
-        <div class="absolute inset-0 w-full h-full">
-            <iframe 
-                src="https://digitalrift.netlify.app/" 
-                class="absolute top-0 left-0 w-[200%] h-[200%] border-0 opacity-50 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none origin-top-left scale-[0.5]"
-                style="filter: contrast(1.1) brightness(0.8);">
-            </iframe>
-        </div>
-
-        <div class="absolute inset-0 flex flex-col items-center justify-center bg-indigo-900/30 group-hover:bg-transparent transition-all duration-500">
-            <h3 class="text-white text-4xl font-black tracking-[0.2em] uppercase drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]">
-                Digital Rift
-            </h3>
-        </div>
-        
-        <div class="absolute top-5 right-5 flex items-center gap-2 px-3 py-1 bg-black/40 backdrop-blur-md border border-white/20 rounded-full z-20">
-            <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
-            </span>
-            <span class="text-[10px] font-bold text-white uppercase tracking-tighter">Live Platform</span>
-        </div>
-    </div>
-
-    <div class="p-8 bg-white">
-        <div class="flex items-center justify-between mb-4">
-            <span class="text-[10px] font-black text-purple-600 uppercase tracking-[0.3em]">Business Ecosystem</span>
-            <span class="text-[10px] text-gray-400 font-mono italic">digitalrift.netlify.app</span>
-        </div>
-        <h3 class="text-2xl font-extrabold mb-3 text-gray-900 tracking-tight">Bridging the Gap</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-6">
-            Digital Rift Tech integrates Technology, Digital Marketing, and Real Estate Solutions to drive business efficiency and asset growth.
-        </p>
-        <a href="https://digitalrift.netlify.app/" target="_blank" 
-           class="inline-block w-full text-center py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-lg hover:scale-[1.02] transition-transform shadow-lg shadow-purple-200">
-            Explore Live Platform
-        </a>
-    </div>
-</div>
-                            </div>
-                        </section>
-
-                    </div>
-
-                <footer id="footer">
-                        <section>
-                            <h3>Contact Me</h3>
-                            <p>Let's discuss your next project or IT solution.</p>
-                            <form method="post" action="#">
-                                <div class="fields">
-                                    <div class="field">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" id="name" />
-                                    </div>
-                                    <div class="field">
-                                        <label for="email">Email</label>
-                                        <input type="text" name="email" id="email" />
-                                    </div>
-                                    <div class="field">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="message" rows="3"></textarea>
-                                    </div>
-                                </div>
+                        <!-- Project 2: Photography Services -->
+                        <article class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <a href="https://www.instagram.com/photographyg3ek" 
+                               class="block overflow-hidden h-64"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View photography portfolio">
+                                <img src="images2/Photographygeek2.JPEG" 
+                                     alt="Professional photography and videography work" 
+                                     class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                                     loading="lazy" />
+                            </a>
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-purple-500 uppercase">
+                                    Photographygeek
+                                </span>
+                                <h3 class="text-2xl font-bold mt-2 mb-2 text-gray-900">
+                                    Visual Production
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Professional media services for corporate events and commercial branding across Zimbabwe.
+                                </p>
                                 <ul class="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
+                                    <li>
+                                        <a href="https://www.instagram.com/photographyg3ek" 
+                                           class="button small"
+                                           target="_blank"
+                                           rel="noopener noreferrer"
+                                           aria-label="View photography gallery on Instagram">
+                                            View Gallery
+                                        </a>
+                                    </li>
                                 </ul>
-                            </form>
-                        </section>
-                        <section class="split contact">
-                            <section class="alt">
-                                <h3>Location</h3>
-                                <p>Harare, Zimbabwe</p>
-                            </section>
-                            <section>
-                                <h3>Phone</h3>
-                                <p><a href="tel:+263779610529">(263) 779 610 529</a></p>
-                            </section>
-                            <section>
-                                <h3>Email</h3>
-                                <p><a href="mailto:bchidhuza2@gmail.com">bchidhuza2@gmail.com</a></p>
-                            </section>
-                            <section>
-                                <h3>Social</h3>
-                                <ul class="icons alt">
-                                    <li><a href="https://twitter.com/IMB_ZW" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                                    <li><a href="https://github.com/IMBZIM" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                                    <li><a href="https://wa.me/263712130545" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
-                                </ul>
-                            </section>
-                        </section>
-                    </footer>
+                            </div>
+                        </article>
 
-                <div id="copyright">
-                        <ul><li>&copy; IMBZ 2026</li></ul>
+                        <!-- Project 3: Digital Rift Platform -->
+                        <article class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group">
+                            
+                            <!-- Live Platform Preview -->
+                            <div class="relative iframe-preview h-80 w-full bg-indigo-900 overflow-hidden">
+                                
+                                <!-- Embedded iframe preview -->
+                                <div class="absolute inset-0 w-full h-full">
+                                    <iframe 
+                                        src="https://digitalrift.netlify.app/" 
+                                        loading="lazy"
+                                        title="Digital Rift platform preview"
+                                        class="absolute top-0 left-0 w-[200%] h-[200%] border-0 opacity-50 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none origin-top-left scale-[0.5]"
+                                        style="filter: contrast(1.1) brightness(0.8);">
+                                    </iframe>
+                                </div>
+                                
+                                <!-- Overlay with title -->
+                                <div class="absolute inset-0 flex flex-col items-center justify-center bg-indigo-900/30 group-hover:bg-transparent transition-all duration-500">
+                                    <h3 class="text-white text-4xl font-black tracking-[0.2em] uppercase drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]">
+                                        Digital Rift
+                                    </h3>
+                                </div>
+                                
+                                <!-- Live Status Indicator -->
+                                <div class="absolute top-5 right-5 flex items-center gap-2 px-3 py-1 bg-black/40 backdrop-blur-md border border-white/20 rounded-full z-20">
+                                    <span class="relative flex h-2 w-2">
+                                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
+                                    </span>
+                                    <span class="text-[10px] font-bold text-white uppercase tracking-tighter">
+                                        Live Platform
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Project Details -->
+                            <div class="p-8 bg-white">
+                                <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                                    <span class="text-[10px] font-black text-purple-600 uppercase tracking-[0.3em]">
+                                        Business Ecosystem
+                                    </span>
+                                    <span class="text-[10px] text-gray-400 font-mono italic">
+                                        digitalrift.netlify.app
+                                    </span>
+                                </div>
+                                <h3 class="text-2xl font-extrabold mb-3 text-gray-900 tracking-tight">
+                                    Digital Rift Tech
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                                    Integrating technology, digital marketing, and real estate solutions 
+                                    to drive business efficiency and growth.
+                                </p>
+                                <a href="https://digitalrift.netlify.app/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   aria-label="Explore Digital Rift platform"
+                                   class="inline-block w-full text-center py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-lg hover:scale-[1.02] transition-transform shadow-lg shadow-purple-200">
+                                    Explore Live Platform
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Project 4: IT Support Systems -->
+                        <article class="project-card bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <a href="#contact" 
+                               class="block overflow-hidden h-64"
+                               aria-label="Learn more about IT support services">
+                                <img src="images2/DVITSUPPORT.JPEG" 
+                                     alt="IT infrastructure and networking equipment" 
+                                     class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                                     loading="lazy" />
+                            </a>
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-orange-500 uppercase">
+                                    Infrastructure
+                                </span>
+                                <h3 class="text-2xl font-bold mt-2 mb-2 text-gray-900">
+                                    IT Support Systems
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Systems Administration for Reignball PVT LTD. Managing backups, 
+                                    high-availability storage, and secure networks.
+                                </p>
+                                <ul class="actions">
+                                    <li>
+                                        <a href="#contact" 
+                                           class="button small"
+                                           aria-label="Contact for IT support services">
+                                            More Info
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
                     </div>
+                </section>
 
             </div>
 
+            <!-- Footer Section -->
+            <footer id="footer" role="contentinfo">
+                
+                <!-- Contact Form Section -->
+                <section id="contact">
+                    <h3>Contact Me</h3>
+                    <p>Let's discuss your next project or IT solution.</p>
+                    
+                    <!-- Note: This form needs backend integration to function -->
+                    <form method="post" action="#" aria-label="Contact form">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input type="text" 
+                                       name="name" 
+                                       id="name" 
+                                       required 
+                                       aria-required="true" />
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" 
+                                       name="email" 
+                                       id="email" 
+                                       required 
+                                       aria-required="true" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" 
+                                          id="message" 
+                                          rows="3" 
+                                          required 
+                                          aria-required="true"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li>
+                                <input type="submit" 
+                                       value="Send Message" 
+                                       aria-label="Send message" />
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+                
+                <!-- Contact Information -->
+                <section class="split contact">
+                    <section class="alt">
+                        <h3>Location</h3>
+                        <p>Harare, Zimbabwe</p>
+                    </section>
+                    <section>
+                        <h3>Phone</h3>
+                        <p>
+                            <a href="tel:+263779610529" aria-label="Call phone number">
+                                (263) 779 610 529
+                            </a>
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Email</h3>
+                        <p>
+                            <a href="mailto:bchidhuza2@gmail.com" aria-label="Send email">
+                                bchidhuza2@gmail.com
+                            </a>
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Social</h3>
+                        <ul class="icons alt">
+                            <li>
+                                <a href="https://twitter.com/IMB_ZW" 
+                                   class="icon brands alt fa-twitter"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Twitter profile">
+                                    <span class="label">Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/IMBZIM" 
+                                   class="icon brands alt fa-github"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="GitHub profile">
+                                    <span class="label">GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/263712130545" 
+                                   class="icon brands alt fa-whatsapp"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="WhatsApp contact">
+                                    <span class="label">WhatsApp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
+
+            <!-- Copyright -->
+            <div id="copyright">
+                <ul>
+                    <li>&copy; IMBZ 2026. All rights reserved.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- JavaScript Dependencies -->
         <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
     </body>
 </html>
