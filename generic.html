@@ -1,122 +1,169 @@
 <!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>About Brandon Chidhuza | Software Engineer</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-<html>
-	<head>
-		<title>About page</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false, 
+                }
+            }
+        </script>
+        
+        <style>
+            /* THE BLEND & BACKGROUND FIX */
+            header.major .date {
+                /* Change text color to match your 'MY BACKGROUND' title for a better blend */
+                color: #212931 !important; 
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: 0.25rem;
+                
+                /* This puts the line 'behind' the text by giving the text a solid white background */
+                background-color: #ffffff !important; 
+                padding: 0 20px !important;
+                position: relative;
+                z-index: 5;
+                display: inline-block;
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            /* Ensure the parent container doesn't overlap the z-index */
+            header.major {
+                position: relative;
+                z-index: 1;
+            }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">IMB</a>
-					</header>
+            /* DIPLOMA SPACING FIX */
+            .edu-title {
+                display: block;
+                line-height: 1.6 !important;
+                margin-bottom: 15px !important;
+                color: #2e4a9e; /* Professional dark blue */
+            }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">HomePage</a></li>
-							<li class="active"><a href="generic.html">About Page</a></li>
-							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://twitter.com/IMB_ZW" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<!--<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->	
-						<!--	<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->	
-							<li><a href="https://github.com/IMBZIM" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://wa.me/c/263712130545" class="icon brands fa-whatsapp"> <span class = "label">WhatsaApp</span></a></li>
-						</ul>
-					</nav>
+            .edu-container {
+                padding: 1.5rem;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
 
-				<!-- Main -->
-					<div id="main">
+        <div id="wrapper">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<span class="date">March 21, 2024</span>
-									<h1>About <br />
-									</h1>
-									<p>I am a highly focused and motivated individual with a flexible and adaptable attitude to work. I have strong interpersonal skills and can work both proactively as an individual and as part of a team to achieve set targets. I am able to build rapport with people on both a professional and social level, and I have a keen eye for detail.</p>
-								</header>
-								<div class="image main"><img src="images2/pic01.jpg" alt="" /></div>
-								<!--<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>-->
-							</section>
+            <header id="header">
+                <a href="index.html" class="logo">IMBZ</a>
+            </header>
 
-					</div>
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li class="active"><a href="generic.html">About Me</a></li>
+                </ul>
+            </nav>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p> Somewhere Road <br />
-								Harare, Zw </p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+263) 712 130 545</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">bchidhuza2@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://twitter.com/IMB_ZW" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<!--	<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>-->
-								<!--	<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://wa.me/c/263712130545" class="icon brands fa-whatsapp"> <span class = "label">WhatsaApp</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+            <div id="main">
+                <section class="post">
+                    <header class="major">
+                        <span class="date">Software Engineering Graduate</span>
+                        <h1>My Background</h1>
+                        <p>Focusing on functional web solutions and reliable IT infrastructure.</p>
+                    </header>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; IMBZIM-Holdings</li><li>Design: <a href="">IMB</a></li></ul>
-					</div>
+                    <div class="image main"><img src="images2/portimage.jpg" alt="Brandon Chidhuza" /></div>
 
-			</div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold mb-4">Professional Summary</h3>
+                            <p>I am a Software Engineering graduate specializing in <strong>PHP and Laravel</strong> to build robust and scalable back-end architectures. My technical stack also includes <strong>Python</strong> for automation and <strong>Tailwind CSS</strong> for modern, responsive front-end design.</p>
+                            
+                            <p>Through hands-on projects like <strong>Warehouse Hero</strong>, I have developed a strong focus on system security and performance optimization. I am dedicated to bridging the gap between complex logic and seamless user experiences.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-xl border border-gray-200 shadow-sm edu-container">
+                            <h4 class="font-bold text-gray-900 mb-6 uppercase tracking-widest text-xs border-b pb-2">Academic Background</h4>
+                            
+                            <div class="mb-6">
+                                <span class="edu-title font-extrabold text-lg uppercase">
+                                    Diploma in Software Engineering
+                                </span>
+                                <p class="text-xs text-gray-500 font-bold">TelOne Center For Learning (2021 - 2024)</p>
+                            </div>
 
-		<!-- Scripts --> 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-           
-	</body>
+                            <ul class="text-[11px] space-y-3 list-none p-0 text-gray-600 font-bold uppercase">
+                                <li>• Data Structures</li>
+                                <li>• Network Administration</li>
+                                <li>• Database Management</li>
+                                <li>• Systems Automation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <h3 class="text-2xl font-bold mb-8">Technical Proficiency</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                        <div class="p-6 border border-gray-100 rounded-lg bg-white shadow-sm">
+                            <h4 class="text-blue-600 font-bold mb-3 uppercase text-sm tracking-wider">Web Development</h4>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                I use <strong>PHP and Laravel</strong> for building secure, data-driven applications. I utilize <strong>Tailwind CSS</strong> to ensure that every project is fully responsive and aesthetically pleasing across all devices.
+                            </p>
+                        </div>
+
+                        <div class="p-6 border border-gray-100 rounded-lg bg-white shadow-sm">
+                            <h4 class="text-orange-600 font-bold mb-3 uppercase text-sm tracking-wider">Systems & Automation</h4>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Utilizing <strong>Python</strong> to design automation scripts and manage infrastructure. I focus on reducing system downtime and implementing effective disaster recovery plans for business continuity.
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer class="mt-12 text-center">
+                        <ul class="actions special">
+                            <li>
+                                <a href="images2/Brandon Chidhuza CV .pdf" class="button primary large" target="_blank">
+                                    Download Technical CV
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </section>
+            </div>
+
+            <footer id="footer">
+                <section class="split contact">
+                    <section>
+                        <h3>Email</h3>
+                        <p><a href="mailto:bchidhuza2@gmail.com">bchidhuza2@gmail.com</a></p>
+                    </section>
+                    <section>
+                        <h3>Social</h3>
+                        <ul class="icons alt">
+                            <li><a href="https://github.com/IMBZIM" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://linkedin.com/in/brandon-chidhuza-3b7780192" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
+
+            <div id="copyright">
+                <ul><li>&copy; IMBZ 2026</li></ul>
+            </div>
+
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
