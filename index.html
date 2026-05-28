@@ -7,11 +7,13 @@
     <meta name="description" content="Lead full-stack software engineer based in Zimbabwe. Specializing in secure, scalable systems using the TALL stack, PHP, Python, and Go." />
     <meta name="author" content="Brandon Chidhuza" />
     
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Brandon Chidhuza | Lead Software Engineer" />
     <meta property="og:description" content="Engineering secure, high-performance software solutions." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://imbzim.github.io/" />
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -36,7 +38,8 @@
 </head>
 <body class="bg-brand-dark text-brand-light font-sans antialiased selection:bg-brand-accent selection:text-white">
 
-    <header class="fixed w-full top-0 z-50 bg-brand-dark/80 backdrop-blur-md border-b border-gray-800">
+    <!-- Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <a href="#" class="text-xl font-bold tracking-tighter text-white">IMBZ</a>
             <nav class="hidden md:flex space-x-8">
@@ -51,7 +54,14 @@
         </div>
     </header>
 
-    <main class="pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+    <!-- Hero Section with Background Banner -->
+    <main class="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center overflow-hidden">
+        
+        <!-- Optimized Background Banner -->
+        <div class="absolute inset-0 z-[-1] opacity-20 mask-image:linear-gradient(to_bottom,white,transparent)">
+            <img src="images2/portimage.jpg" alt="Workspace" class="w-full h-full object-cover" loading="eager" />
+        </div>
+
         <span class="text-brand-accent font-semibold tracking-wide uppercase text-sm">Lead Software Engineer & Founder</span>
         <h1 class="mt-4 text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight">
             Brandon Chidhuza
@@ -61,74 +71,99 @@
         </p>
         <div class="mt-10 flex justify-center gap-4">
             <a href="#projects" class="px-8 py-3 bg-brand-accent text-white font-medium rounded-lg hover:bg-blue-600 transition-all duration-200 shadow-lg shadow-blue-500/30">View Work</a>
-            <a href="#contact" class="px-8 py-3 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-700 transition-all duration-200 border border-gray-700">Get in Touch</a>
+            <a href="#contact" class="px-8 py-3 bg-gray-800 border border-gray-700 text-white font-medium rounded-lg hover:bg-gray-700 transition-all duration-200">Get in Touch</a>
         </div>
     </main>
 
-    <section class="py-12 border-y border-gray-800 bg-gray-900/50">
+    <!-- Tech Stack -->
+    <section class="py-12 border-y border-gray-800 bg-gray-900/80 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-6">Core Technologies</p>
             <div class="flex flex-wrap justify-center gap-3">
-                <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm font-medium text-gray-300">TALL Stack (Tailwind, Alpine, Laravel, Livewire)</span>
-                <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm font-medium text-gray-300">PHP</span>
-                <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm font-medium text-gray-300">Python</span>
-                <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm font-medium text-gray-300">Go</span>
-                <span class="px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm font-medium text-gray-300">SQL / System Architecture</span>
+                <span class="px-4 py-2 bg-brand-dark border border-gray-700 rounded-md text-sm font-medium text-gray-300">TALL Stack (Tailwind, Alpine, Laravel, Livewire)</span>
+                <span class="px-4 py-2 bg-brand-dark border border-gray-700 rounded-md text-sm font-medium text-gray-300">PHP</span>
+                <span class="px-4 py-2 bg-brand-dark border border-gray-700 rounded-md text-sm font-medium text-gray-300">Python</span>
+                <span class="px-4 py-2 bg-brand-dark border border-gray-700 rounded-md text-sm font-medium text-gray-300">Go</span>
+                <span class="px-4 py-2 bg-brand-dark border border-gray-700 rounded-md text-sm font-medium text-gray-300">SQL / System Architecture</span>
             </div>
         </div>
     </section>
 
+    <!-- Projects Grid -->
     <section id="projects" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-white mb-12">Featured Engineering</h2>
+        <h2 class="text-3xl font-bold text-white mb-12">Featured Engineering & Infrastructure</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <article class="group relative bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden hover:border-brand-accent transition-colors duration-300">
-                <div class="p-8">
-                    <div class="flex justify-between items-start mb-4">
-                        <span class="text-xs font-bold text-brand-accent uppercase tracking-wider">Platform Ecosystem</span>
-                        <span class="flex items-center gap-2 px-2 py-1 bg-green-500/10 text-green-400 text-xs font-medium rounded border border-green-500/20">
-                            <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span> Live
-                        </span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Digital Rift Tech</h3>
-                    <p class="text-gray-400 text-sm mb-6">
-                        An integrated high-efficiency platform merging technology, marketing, and real estate solutions.
-                    </p>
-                    <a href="https://digitalrifttech.com/" target="_blank" class="inline-flex items-center text-sm font-medium text-brand-accent hover:text-blue-400">
-                        Explore Platform <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                    </a>
+            <!-- Warehouse Hero -->
+            <article class="group bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden hover:border-gray-600 transition-colors duration-300 flex flex-col">
+                <div class="h-56 w-full overflow-hidden bg-black">
+                    <img src="images2/web dev.jpg" alt="Warehouse Hero Dashboard" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
-            </article>
-
-            <article class="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden hover:border-gray-600 transition-colors duration-300">
-                <div class="p-8">
-                    <span class="text-xs font-bold text-purple-400 uppercase tracking-wider mb-4 block">PropTech SaaS</span>
-                    <h3 class="text-2xl font-bold text-white mb-3">RiftProp</h3>
-                    <p class="text-gray-400 text-sm mb-6">
-                        A proprietary real estate management platform utilizing the TALL stack to manage property marketing, sales, and client relationships.
-                    </p>
-                </div>
-            </article>
-
-            <article class="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden hover:border-gray-600 transition-colors duration-300">
-                <div class="p-8">
-                    <span class="text-xs font-bold text-orange-400 uppercase tracking-wider mb-4 block">Logistics Software</span>
-                    <h3 class="text-2xl font-bold text-white mb-3">RiftRun</h3>
-                    <p class="text-gray-400 text-sm mb-6">
-                        A logistics and rider management platform featuring real-time GPS tracking and admin analytics.
-                    </p>
-                </div>
-            </article>
-
-            <article class="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden hover:border-gray-600 transition-colors duration-300">
-                <div class="p-8">
+                <div class="p-8 flex-1">
                     <span class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-4 block">Inventory Management</span>
                     <h3 class="text-2xl font-bold text-white mb-3">Warehouse Hero</h3>
                     <p class="text-gray-400 text-sm mb-6">
                         A secure warehouse management system currently in production, designed for robust data integrity and inventory analytics logic.
                     </p>
-                    <a href="https://github.com/IMBZIM" target="_blank" class="inline-flex items-center text-sm font-medium text-gray-300 hover:text-white">
+                    <a href="https://github.com/IMBZIM" target="_blank" class="inline-flex items-center text-sm font-medium text-gray-300 hover:text-white mt-auto">
                         View Source <i class="fab fa-github ml-2"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Digital Rift Ecosystem -->
+            <article class="group bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden hover:border-brand-accent transition-colors duration-300 flex flex-col">
+                <!-- Using a styled container instead of an iframe to prevent layout lag -->
+                <div class="h-56 w-full bg-indigo-900 relative flex items-center justify-center overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-indigo-950 to-blue-900 opacity-90 group-hover:opacity-100 transition-opacity"></div>
+                    <h3 class="relative z-10 text-white text-3xl font-black uppercase tracking-widest drop-shadow-lg">Digital Rift</h3>
+                    <div class="absolute top-4 right-4 flex items-center gap-2 px-3 py-1 bg-black/40 backdrop-blur-md border border-white/10 rounded-full z-20">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
+                        </span>
+                        <span class="text-[10px] font-bold text-white uppercase tracking-tighter">Live</span>
+                    </div>
+                </div>
+                <div class="p-8 flex-1">
+                    <span class="text-xs font-bold text-brand-accent uppercase tracking-wider mb-4 block">Platform Ecosystem</span>
+                    <h3 class="text-2xl font-bold text-white mb-3">Digital Rift Tech</h3>
+                    <p class="text-gray-400 text-sm mb-6">
+                        An integrated high-efficiency platform merging technology, marketing, and real estate solutions. Includes SaaS products like RiftProp and RiftRun.
+                    </p>
+                    <a href="https://digitalrifttech.com/" target="_blank" class="inline-flex items-center text-sm font-medium text-brand-accent hover:text-blue-400 mt-auto">
+                        Explore Platform <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- IT Support Systems -->
+            <article class="group bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden hover:border-gray-600 transition-colors duration-300 flex flex-col">
+                <div class="h-56 w-full overflow-hidden bg-black">
+                    <img src="images2/DVITSUPPORT.JPEG" alt="IT Infrastructure Support" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                </div>
+                <div class="p-8 flex-1">
+                    <span class="text-xs font-bold text-orange-400 uppercase tracking-wider mb-4 block">Infrastructure</span>
+                    <h3 class="text-2xl font-bold text-white mb-3">IT Support Systems</h3>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Systems Administration managing backups, high-availability storage and secure networks to ensure zero-break performance for enterprise clients.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Photography Geek / Visual Media -->
+            <article class="group bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden hover:border-gray-600 transition-colors duration-300 flex flex-col">
+                <div class="h-56 w-full overflow-hidden bg-black">
+                    <img src="images2/Photographygeek2.JPEG" alt="Professional Media Services" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                </div>
+                <div class="p-8 flex-1">
+                    <span class="text-xs font-bold text-purple-400 uppercase tracking-wider mb-4 block">Visual Production</span>
+                    <h3 class="text-2xl font-bold text-white mb-3">Photography Geek</h3>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Professional drone operation and visual media services specifically tailored for commercial real estate marketing across Zimbabwe.
+                    </p>
+                    <a href="https://www.instagram.com/photographyg3ek" target="_blank" class="inline-flex items-center text-sm font-medium text-gray-300 hover:text-white mt-auto">
+                        View Media Portfolio <i class="fab fa-instagram ml-2"></i>
                     </a>
                 </div>
             </article>
@@ -136,24 +171,13 @@
         </div>
     </section>
 
-    <section class="py-24 border-t border-gray-800 bg-brand-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-white mb-6">Commercial Media Services</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto mb-10">
-                Operating under <span class="text-white font-medium">Photography Geek</span>, providing professional drone operation and visual media services specifically tailored for commercial real estate marketing.
-            </p>
-            <a href="https://www.instagram.com/photographyg3ek" target="_blank" class="inline-flex items-center px-6 py-3 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-700 transition-all border border-gray-700">
-                View Media Portfolio <i class="fab fa-instagram ml-2"></i>
-            </a>
-        </div>
-    </section>
-
+    <!-- Footer & Contact -->
     <footer id="contact" class="border-t border-gray-800 bg-gray-900/50 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-4">Let's Build Together</h3>
-                    <p class="text-gray-400 mb-8">Currently based in Ruwa, Zimbabwe. Available for software engineering roles, system architecture consulting, and infrastructure deployments.</p>
+                    <p class="text-gray-400 mb-8">Currently based in Zimbabwe. Available for software engineering roles, system architecture consulting and infrastructure deployments.</p>
                     <div class="space-y-4 text-sm">
                         <p class="flex items-center text-gray-300">
                             <i class="fas fa-envelope w-6 text-brand-accent"></i>
@@ -165,7 +189,7 @@
                         </p>
                         <p class="flex items-center text-gray-300">
                             <i class="fas fa-map-marker-alt w-6 text-brand-accent"></i>
-                            Ruwa / Harare, Zimbabwe
+                             Harare, Zimbabwe
                         </p>
                     </div>
                 </div>
