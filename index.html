@@ -11,7 +11,7 @@
     <meta property="og:title" content="Brandon Chidhuza | Lead Software Engineer" />
     <meta property="og:description" content="Engineering secure, high-performance software solutions." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://imbzim.github.io/" />
+    <meta property="og:url" content="https://brandon.digitalrifttech.com/" />
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -113,9 +113,10 @@
 
             <!-- Digital Rift Ecosystem -->
             <article class="group bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden hover:border-brand-accent transition-colors duration-300 flex flex-col">
-                <div class="h-56 w-full bg-indigo-900 relative flex items-center justify-center overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-indigo-950 to-blue-900 opacity-90 group-hover:opacity-100 transition-opacity"></div>
-                    <h3 class="relative z-10 text-white text-3xl font-black uppercase tracking-widest drop-shadow-lg">Digital Rift</h3>
+                <div class="h-56 w-full bg-black relative overflow-hidden">
+                    <!-- Iframe container mapping to your main domain -->
+                    <iframe src="https://digitalrifttech.com/" class="w-full h-full border-0 pointer-events-none select-none" style="min-height: 224px;" tabindex="-1"></iframe>
+                    
                     <div class="absolute top-4 right-4 flex items-center gap-2 px-3 py-1 bg-black/40 backdrop-blur-md border border-white/10 rounded-full z-20">
                         <span class="relative flex h-2 w-2">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -209,7 +210,7 @@
                         <label for="message" class="sr-only">Message</label>
                         <textarea id="message" rows="4" placeholder="Message" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none text-white transition-all resize-none"></textarea>
                     </div>
-                    <button type="button" class="w-full px-8 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-200 transition-all duration-200">
+                    <button type="submit" class="w-full px-8 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-200 transition-all duration-200">
                         Send Message
                     </button>
                 </form>
